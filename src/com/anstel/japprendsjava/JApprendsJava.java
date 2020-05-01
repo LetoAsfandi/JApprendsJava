@@ -1,6 +1,6 @@
 /*
  * Ce programme contient tout ce qui me sert à apprendre java
- * @version 1.02
+ * @version 1.03
  * @author Thierry Ernesto Baribaud.
  */
 package com.anstel.japprendsjava;
@@ -23,6 +23,7 @@ public class JApprendsJava {
         // Redéfini la marque de la voiture à l'aide du setter : setMarque()
         voiture.setMarque("Citroen");
         voiture.setModele("C4 Picasso");
+        voiture.setPuissance(150);
         System.out.println("Voiture : "+voiture.getMarque());
 
         // Sollicite la méthode toString() de l'objet Voiture
@@ -30,6 +31,7 @@ public class JApprendsJava {
 
         // Création d'une voiture avec le constructeur secondaire
         voiture= new Voiture("Renaud", "Clio");
+        voiture.setPuissance(80);
         System.out.println(voiture);
 
     }

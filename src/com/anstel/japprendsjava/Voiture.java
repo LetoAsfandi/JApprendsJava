@@ -1,6 +1,6 @@
 /*
  * Classe décrivant une voiture
- * @version 1.02
+ * @version 1.03
  * @author Thierry Ernesto Baribaud.
  */
 package com.anstel.japprendsjava;
@@ -19,6 +19,17 @@ public class Voiture {
      * modèle de la voiture
      */
     private String modele;
+
+    /**
+     * Puissance de la voiture exprimée en chevaux
+     */
+    private int puissance;
+
+    /**
+     * Nombre de kilomètres effectués.
+     * A la création la voiture n'a pas de kilométrage.
+     */
+    private float kilometrage=0;
 
     /**
      * Constructeur principal de la classe.
@@ -69,6 +80,36 @@ public class Voiture {
     public void setModele(String modele) {
         this.modele = modele;
     }
+    /**
+     * Retourne la puissance de la voiture
+     * @return la puissance de la voiture
+     */
+    public int getPuissance() {
+        return puissance;
+    }
+
+    /**
+     * Définit la puissance de la voiture
+     * @param puissance la puissance de la voiture
+     */
+    public void setPuissance(int puissance) {
+        this.puissance = puissance;
+    }
+    /**
+     * Retourne le kilométrage de la voiture
+     * @return le kilométrage de la voiture
+     */
+    public float getKilometrage() {
+        return kilometrage;
+    }
+
+    /**
+     * Définit le kilométrage de la voiture
+     * @param kilometrage le kilométrage de la voiture
+     */
+    public void setKilometrage(float kilometrage) {
+        this.kilometrage = kilometrage;
+    }
 
     /**
      * Retourne l'objet sous forme textuelle
@@ -78,7 +119,9 @@ public class Voiture {
     public String toString() {
         return "Voiture{" +
                 "marque='" + marque + '\'' +
-                "modele='" + modele + '\'' +
+                ", modele='" + modele + '\'' +
+                ", puissance= " + puissance +
+                ", kilometrage= " + kilometrage  +
                 '}';
     }
 }
