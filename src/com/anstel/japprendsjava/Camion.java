@@ -1,14 +1,11 @@
 /*
- * Classe décrivant une voiture
+ * Classe décrivant un camion
  * @version 1.04
  * @author Thierry Ernesto Baribaud.
  */
 package com.anstel.japprendsjava;
 
-/**
- * classe décrivant une voiture
- */
-public class Voiture extends Vehicule {
+public class Camion extends Vehicule{
 
     // Les attributs ci-dessous
 
@@ -17,27 +14,21 @@ public class Voiture extends Vehicule {
     /**
      * Constructeur principal de la classe.
      *
-     * @param marque de la voiture
+     * @param marque du camion
      */
-    public Voiture(String marque) {
+    public Camion(String marque) {
         super(marque);
     }
 
     /**
      * Constructeur secondaire de la classe.
      *
-     * @param marque marque de la voiture.
-     * @param modele modèle de la voiture.
+     * @param marque marque du camion.
+     * @param modele modèle du camion.
      */
-    public Voiture(String marque, String modele) {
+    public Camion(String marque, String modele) {
         super(marque, modele);
     }
-
-    // Les methodes de la classe ci-dessous
-
-    // Accélère(), Freine(), Démarre(), Arrete(), ...
-
-    // To string ci-dessous
 
     /**
      * Retourne l'objet sous forme textuelle
@@ -46,7 +37,7 @@ public class Voiture extends Vehicule {
      */
     @Override
     public String toString() {
-        return "Voiture{" +
+        return "Camion{" +
                 super.toString()+
                 '}';
     }

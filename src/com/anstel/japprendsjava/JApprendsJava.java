@@ -1,6 +1,6 @@
 /*
  * Ce programme contient tout ce qui me sert à apprendre java
- * @version 1.03
+ * @version 1.04
  * @author Thierry Ernesto Baribaud.
  */
 package com.anstel.japprendsjava;
@@ -11,28 +11,36 @@ package com.anstel.japprendsjava;
 public class JApprendsJava {
     public static void main(String... args) {
         Voiture voiture;
+        Camion camion;
+        Bicyclette bicyclette;
 
         System.out.println("J'apprends Java!");
 
         // Création d'un nouvel objet Voiture
-        voiture= new Voiture("Peugeot");
+        voiture = new Voiture("Peugeot");
 
         // Retourne la marque de la voiture à l'aide du getter : getMarque()
-        System.out.println("Voiture : "+voiture.getMarque());
+        System.out.println("Voiture : " + voiture.getMarque());
 
         // Redéfini la marque de la voiture à l'aide du setter : setMarque()
         voiture.setMarque("Citroen");
         voiture.setModele("C4 Picasso");
-        voiture.setPuissance(150);
-        System.out.println("Voiture : "+voiture.getMarque());
+//        voiture.setPuissance(150);
+        System.out.println("Voiture : " + voiture.getMarque());
 
         // Sollicite la méthode toString() de l'objet Voiture
         System.out.println(voiture);
 
         // Création d'une voiture avec le constructeur secondaire
-        voiture= new Voiture("Renaud", "Clio");
-        voiture.setPuissance(80);
+        voiture = new Voiture("Renaud", "Clio");
+//        voiture.setPuissance(80);
         System.out.println(voiture);
+
+        camion= new Camion("Mack","Superliner");
+        System.out.println(camion);
+
+        bicyclette= new Bicyclette("Go Sport","X512");
+        System.out.println(bicyclette);
 
     }
 }

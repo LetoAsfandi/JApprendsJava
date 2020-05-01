@@ -1,14 +1,14 @@
 /*
- * Classe décrivant une voiture
+ * Classe décrivant une bicyclette
  * @version 1.04
  * @author Thierry Ernesto Baribaud.
  */
 package com.anstel.japprendsjava;
 
 /**
- * classe décrivant une voiture
+ * classe décrivant une bicyclette
  */
-public class Voiture extends Vehicule {
+public class Bicyclette extends Vehicule {
 
     // Les attributs ci-dessous
 
@@ -17,19 +17,19 @@ public class Voiture extends Vehicule {
     /**
      * Constructeur principal de la classe.
      *
-     * @param marque de la voiture
+     * @param marque de la bicyclette
      */
-    public Voiture(String marque) {
+    public Bicyclette(String marque) {
         super(marque);
     }
 
     /**
      * Constructeur secondaire de la classe.
      *
-     * @param marque marque de la voiture.
-     * @param modele modèle de la voiture.
+     * @param marque marque de la bicyclette.
+     * @param modele modèle de la bicyclette.
      */
-    public Voiture(String marque, String modele) {
+    public Bicyclette(String marque, String modele) {
         super(marque, modele);
     }
 
@@ -46,7 +46,7 @@ public class Voiture extends Vehicule {
      */
     @Override
     public String toString() {
-        return "Voiture{" +
+        return "Bicyclette{" +
                 super.toString()+
                 '}';
     }
