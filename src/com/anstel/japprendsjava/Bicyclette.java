@@ -1,6 +1,6 @@
 /*
  * Classe décrivant une bicyclette
- * @version 1.04
+ * @version 1.06
  * @author Thierry Ernesto Baribaud.
  */
 package com.anstel.japprendsjava;
@@ -20,7 +20,8 @@ public class Bicyclette extends Vehicule {
      * @param marque de la bicyclette
      */
     public Bicyclette(String marque) {
-        super(marque);
+//        super(marque);
+        this(marque,null);
     }
 
     /**
@@ -31,6 +32,7 @@ public class Bicyclette extends Vehicule {
      */
     public Bicyclette(String marque, String modele) {
         super(marque, modele);
+        setRoue(2);
     }
 
     // Les methodes de la classe ci-dessous

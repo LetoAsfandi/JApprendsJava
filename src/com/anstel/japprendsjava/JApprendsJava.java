@@ -1,6 +1,6 @@
 /*
  * Ce programme contient tout ce qui me sert à apprendre java
- * @version 1.05
+ * @version 1.06
  * @author Thierry Ernesto Baribaud.
  */
 package com.anstel.japprendsjava;
@@ -17,6 +17,7 @@ public class JApprendsJava {
         tutoCamion();
         tutoBicyclette();
         tutoMoto();
+        tutoTrottinette();
     }
 
     /**
@@ -53,6 +54,10 @@ public class JApprendsJava {
         Camion camion;
         camion= new Camion("Mack","Superliner");
         System.out.println(camion);
+
+        camion=new Camion("Berliez","X27");
+        camion.setRoue(8);
+        System.out.println(camion);
     }
 
     /**
@@ -71,5 +76,14 @@ public class JApprendsJava {
         Moto moto;
         moto= new Moto("Kawasaki","GTR");
         System.out.println(moto);
+    }
+
+    /**
+     * Tutorial sur la trottinette
+     */
+    private static void tutoTrottinette(){
+        Trottinette trottinette;
+        trottinette= new Trottinette("Xiaomi","M365 Pro");
+        System.out.println(trottinette);
     }
 }

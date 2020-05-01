@@ -1,14 +1,14 @@
 /*
- * Classe décrivant une moto
+ * Classe décrivant une trottinette
  * @version 1.06
  * @author Thierry Ernesto Baribaud.
  */
 package com.anstel.japprendsjava;
 
 /**
- * classe décrivant une moto
+ * classe décrivant une trottinette
  */
-public class Moto extends Vehicule {
+public class Trottinette extends Vehicule {
 
     // Les attributs ci-dessous
 
@@ -17,9 +17,9 @@ public class Moto extends Vehicule {
     /**
      * Constructeur principal de la classe.
      *
-     * @param marque de la moto
+     * @param marque de la trottinette
      */
-    public Moto(String marque) {
+    public Trottinette(String marque) {
 //        super(marque);
         this(marque,null);
     }
@@ -27,10 +27,10 @@ public class Moto extends Vehicule {
     /**
      * Constructeur secondaire de la classe.
      *
-     * @param marque marque de la moto.
-     * @param modele modèle de la moto.
+     * @param marque marque de la trottinette.
+     * @param modele modèle de la trottinette.
      */
-    public Moto(String marque, String modele) {
+    public Trottinette(String marque, String modele) {
         super(marque, modele);
         setRoue(2);
     }
@@ -48,7 +48,7 @@ public class Moto extends Vehicule {
      */
     @Override
     public String toString() {
-        return "Moto{" +
+        return "Trottinette{" +
                 super.toString()+
                 '}';
     }

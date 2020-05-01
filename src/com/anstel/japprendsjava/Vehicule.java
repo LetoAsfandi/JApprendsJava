@@ -1,6 +1,6 @@
 /*
  * Classe décrivant un vehicule
- * @version 1.04
+ * @version 1.06
  * @author Thierry Ernesto Baribaud.
  */
 package com.anstel.japprendsjava;
@@ -27,6 +27,11 @@ public abstract class Vehicule {
      * A la création le véhicule n'a pas de kilométrage.
      */
     private float kilometrage = 0;
+
+    /**
+     * Nombre de roue
+     */
+    private int roue;
 
     // Les constructeurs de la classe ci-dessous
 
@@ -106,6 +111,23 @@ public abstract class Vehicule {
         this.kilometrage = kilometrage;
     }
 
+    /**
+     * Retourne le nombre de roue du véhicule
+     *
+     * @return le nombre de roue du véhicule
+     */
+    public int getRoue() {
+        return roue;
+    }
+
+    /**
+     * Définit le nombre de roue du véhicule
+     *
+     * @param roue le nombre de roue du véhicule
+     */
+    public void setRoue(int roue) {
+        this.roue = roue;
+    }
     // Les methodes de la classe ci-dessous
 
     // Accélère(), Freine(), Démarre(), Arrete(), ...
@@ -123,6 +145,7 @@ public abstract class Vehicule {
                 "marque='" + marque + '\'' +
                 ", modele='" + modele + '\'' +
                 ", kilometrage= " + kilometrage +
+                ", roue= " + roue +
                 '}';
     }
 }

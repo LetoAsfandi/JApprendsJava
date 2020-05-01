@@ -1,6 +1,6 @@
 /*
  * Classe décrivant un camion
- * @version 1.04
+ * @version 1.06
  * @author Thierry Ernesto Baribaud.
  */
 package com.anstel.japprendsjava;
@@ -17,7 +17,8 @@ public class Camion extends Vehicule{
      * @param marque du camion
      */
     public Camion(String marque) {
-        super(marque);
+//      super(marque);
+        this(marque,null);
     }
 
     /**
@@ -28,6 +29,7 @@ public class Camion extends Vehicule{
      */
     public Camion(String marque, String modele) {
         super(marque, modele);
+        setRoue(6);
     }
 
     /**
