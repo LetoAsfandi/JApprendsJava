@@ -1,6 +1,6 @@
 /*
  * Ce programme contient tout ce qui me sert à apprendre java
- * @version 1.04
+ * @version 1.05
  * @author Thierry Ernesto Baribaud.
  */
 package com.anstel.japprendsjava;
@@ -10,11 +10,20 @@ package com.anstel.japprendsjava;
  */
 public class JApprendsJava {
     public static void main(String... args) {
-        Voiture voiture;
-        Camion camion;
-        Bicyclette bicyclette;
 
         System.out.println("J'apprends Java!");
+
+        tutoVoiture();
+        tutoCamion();
+        tutoBicyclette();
+        tutoMoto();
+    }
+
+    /**
+     * Tutorial sur la voiture
+     */
+    private static void tutoVoiture(){
+        Voiture voiture;
 
         // Création d'un nouvel objet Voiture
         voiture = new Voiture("Peugeot");
@@ -35,12 +44,32 @@ public class JApprendsJava {
         voiture = new Voiture("Renaud", "Clio");
 //        voiture.setPuissance(80);
         System.out.println(voiture);
+    }
 
+    /**
+     * Tutorial sur le camion
+     */
+    private static void tutoCamion(){
+        Camion camion;
         camion= new Camion("Mack","Superliner");
         System.out.println(camion);
+    }
 
+    /**
+     * Tutorial sur la bicyclette
+     */
+    private static void tutoBicyclette(){
+        Bicyclette bicyclette;
         bicyclette= new Bicyclette("Go Sport","X512");
         System.out.println(bicyclette);
+    }
 
+    /**
+     * Tutorial sur la moto
+     */
+    private static void tutoMoto(){
+        Moto moto;
+        moto= new Moto("Kawasaki","GTR");
+        System.out.println(moto);
     }
 }
